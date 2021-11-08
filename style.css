@@ -43,6 +43,32 @@ h3{
 }
 /*End of CSS for topnav bar*/
 
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #67819A;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.footexplorelinks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+.footitem{
+    width: 300px;
+}
+.footlinks{
+    text-decoration: none;
+    font-size: 15px;
+    color: #bababa;
+    text-align: center;
+}
 /*Beginning CSS for Hero Headers*/
 .hheadtitle{
     text-align: center;
@@ -62,12 +88,13 @@ h3{
     background-position-y: 0px;
     background-repeat: no-repeat;
 }
+
 #index .hhead {background-image: url(img/homepage/homepagehhimage.jpg);}
 #about .hhead {background-image: url(img/about/pexels-photo-624063.jpg);}
 #expo .hhead {background-image: url(img/expoditons/expoheadimg.jpg);}
 #rules .hhead {background-image: url(img/rules/rulesheadimg.jpg); background-position: 0% 50%;}
 #book .hhead {background-image: url(img/booknow/booknow_head.jpg);}
-#signin .hhead {background-image: url(img/signin/soundofthunderad.png);}
+
 /*End of CSS for Hero Headers*/
 
 .expthepst{
@@ -114,7 +141,7 @@ h3{
     text-align: center;
     color: white;
     background-color: #9DC0AC;
-    transform:translate(0px, 230px);
+    transform:translate(0px, 164px);
     width: 203px;
     height: 38px;
 }
@@ -179,7 +206,7 @@ h3{
     display: inline-block;
 }
 .exphere{
-    transform: translate(0px, 40px);
+    transform: translate(0px, 0px);
 }
 .experience{
     width: 70%;
@@ -187,7 +214,7 @@ h3{
     justify-content: space-between;
     margin-left:15%;
     margin-right: 15%;
-    transform: translate(0px, 40px);
+    transform: translate(0px, 0px);
 }
 .trophiestitle{
     bottom: 100%;
@@ -195,7 +222,7 @@ h3{
     text-align: center;
     color: white;
     background-color: #9DC0AC;
-    transform:translate(0px, 171px);
+    transform:translate(0px, 122px);
     height: 38px;
     width: 253px;
 }
@@ -215,7 +242,7 @@ h3{
     text-align: center;
     color: white;
     background-color: #9DC0AC;
-    transform:translate(0px, 174px);
+    transform:translate(0px, 125px);
     height: 38px;
     width: 253px;
 }
@@ -252,38 +279,43 @@ h3{
     height: 47px;
     color: white;
     text-align: center;
+    transform: translate(0px, 15px);
 }
-.hist_bout_meettitles .hist_bouttext{
+.hist_bouttext{
     color: black;
+    width: 385px;
+    font-size: 25px;
 }
 .aboutpgallinfo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.hist_bout_meettitles .guides{
+
+.guides{
     width: 385px;
-    height: 85px;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
+    align-items: center;
 }
-.hist_bout_meettitles .guides .guidestext{
+.guidestext{
     font-size: 25px;
     color: white;
     background-color: #9DC0AC;
     width: 203px;
-    height: 85px;
+    text-align: center;
 }
-.hist_bout_meettitles .guides .guidesimg{
+
+.guidesimg {
     width: 111px;
     height: 85px;
-    background-size: cover;
-    object-position: 100% 0%;
-    position: relative;
-    background-position: center;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    border-radius: 25%;
+    position:relative;
+    overflow:hidden;
+    border-radius: 15%;
+}
+.guidesimg img {
+    position: absolute;
+    display: block;
+    z-index: -1;
 }
 /*End of CSS for About Page*/
 
@@ -300,14 +332,12 @@ h3{
     animation:ease-in-out;
     z-index: 0;
     height: auto;
+
 }
 .typeofexpodition:hover .typeofexpodition-content {
     display: block;
-    width: 500px;
-    color: black;
     opacity: 50%;
-    height: 400px;
-    transform: translate(0px, -71px);
+    transform: translate(0px, -1000px);
     height: auto;
 }
 .nameofexpodition{
@@ -317,20 +347,26 @@ h3{
 }
 
 /*Beginning of CSS for Expoditions Page*/
+.eratitles{
+    text-align: center;
+    color: white;
+    background-color: #9DC0AC;
+    width: 1350px;
+    transform: translate(45px, 0px);
+}
 .typeofexpodition {
     position:relative;
     width: 203px;
     height: 313px;
     overflow:hidden;
-    }
-    .typeofexpodition img {
+}
+.typeofexpodition img {
     position: absolute;
     display: block;
-    top: -300px;
-    left: -100px;
     z-index: -1;
-    }
-    .typeofexpodition .typeofexpodition-content {
+    zoom: 50%;
+}
+.typeofexpodition .typeofexpodition-content {
     display: none;
     position: absolute;
     bottom: 3px;
@@ -342,8 +378,8 @@ h3{
     height: auto;
     transition: all .5s ease-in-out;
     font-size: 15px;
-    }
-    .typeofexpodition:hover .typeofexpodition-content {
+}
+.typeofexpodition:hover .typeofexpodition-content {
     display: block;
     color: white;
     opacity: 90%;
@@ -351,27 +387,67 @@ h3{
     transform: translate(0px, -71px);
     height: auto;
     visibility: visible;
-    }
-    .nameofexpodition {
+}
+.nameofexpodition {
     background-color: #9DC0AC;
+    color: white;
     opacity: 90%;
     z-index: 2;
     height: 44px;
     font-size: 30px;
     text-align: center;
-    transform: translate(0px, 230px);
-    }
+    transform: translate(0px, 240px);
+}
+.mostpopularexpoditions{
+    display: flex;
+    justify-content: space-around;
+}
+.mesozoicexpoditions{
+    display: flex;
+    justify-content: center;
+    gap: 71px;
+}
+.expoditionsrows{
+    margin-left: 213px;
+    gap: 71px;
+    max-width: 1025px;
+    display: flex;
+    justify-content: center;
+    row-gap: 15px;
+}
+.trophyrows{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content: space-around;
+}
+.typeoftrophy {
+    position:relative;
+    width: 320px;
+    height: 351px;
+    overflow:hidden;
+}
+.typeoftrophy img {
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.typeoftrophy-content{
+    width: 320px;
+    font-size: 30px;
+}
+
 /*End of CSS for Expoditions Page*/
 
 /*Beginning of CSS for Rules Page*/
 .riskrulessafety{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .risk_rule_safetitles{
     background-color: #9DC0AC;
     width: 385px;
-    height: 67px;
+
     color: white;
     text-align: center;
 }
@@ -394,20 +470,41 @@ h3{
 
 /*Beginning of CSS for Book Now Page*/
 #personinfo{
-    background-color: black;
-    width: 100%;
-    flex: 345px;
+    display: flex;
+    justify-content: center;
 }
 ::placeholder{
-    color: #fff;
+    color: white;
 }
 .booktripform{
-
-    width: 345px;
+    font-size: 30px;
+    width: 690px;
     height: 47px;
     background-color: #9DC0AC;
     border-color: #fff;
     
+}
+.reg{
+    display: flex;
+    justify-content: space-between;
+    max-width: 841px;
+    transform: translate(0px, 15px);
+    background-color: #9DC0AC;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.booknowbutton{
+    width: 254px;
+    font-size: 25px;
+    background-color: #9DC0AC;
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-decoration-color: none;
+    border-width: 2px;
+    transform: translate(593px, 20px);
 }
 /*End of CSS for Book Now Page*/
 

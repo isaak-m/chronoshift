@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    	.expodition {
+		  width: 500px;
+		  height: 500px;
+		  overflow:hidden;
+          transform: translate(500px, 200px);
+		}
+		.expodition img {
+		  display: block;
+		  top: -400px;
+		  left: -100px;
+          z-index: -1;
+		}
+        .expodition h2{
+            font-size: 30px;
+            background-color: aqua;
+            opacity: 100%;
+            text-align: center;
+            color: black;
+            z-index: 5;
+            transform: translate(0px, 150px);
+        }
+        .expodition .expoditionp{
+            display: none;
+        }
+        .expodition:hover .expoditionp{
+            font-size: 20px;
+            background-color: green;
+            opacity: 50%;
+            z-index: 5;
+            animation: ease;
+        }
+	</style>
+</head>
+<body>
+<section>
+    <div class="expodition">
+    <img src="img\homepage\homepagehhimage.jpg">
+    <div class="expoditionp">
+        <p>
+            Chronoshift Expeditions first started when Dr. Juan Perez had a  desire to hunt extinct monsters. He attended college and earned  his engineering and theoretical physics PhD’s. Eventually, he developed a time machine to travel back in time to hunt the monsters that once ruled the planet. The time machine took roughly 12 years to develop, though the building of the machine didn’t take long. The part that took the longest was doing the math to figure out how to travel in time.
+        </p>
+    </div>
+    <h2>something</h2>
+    </div>
+</section>
+
+</body>
+
+
+<style>
+	.typeofexpodition {
+  position:absolute;
+  width: 500px;
+  height: 500px;
+  overflow:hidden;
+  z-index: -1;
+}
+.typeofexpodition img{
+    display: block;
+}
+.typeofexpodition .typeofexpodition-content {
+  display: none;
+  position: absolute;
+  bottom: 3px;
+  left: 0%;
+  right: 0%;
+  background-color: orange;
+  animation:ease-in-out;
+  z-index: 0;
+  height: auto;
+}
+.typeofexpodition:hover .typeofexpodition-content {
+  display: block;
+  color: black;
+  opacity: 50%;
+  transform: translate(0px, -71px);
+}
+.nameofexpodition{
+    background-color: violet;
+    transform: translate(0px, -38px);
+    opacity: 50%;
+    z-index: 2;
+}
+</style>
+<h1>The img element</h1>
+
+<div class="typeofexpodition">
+	<img src="img\homepage\elephant-herd-of-elephants-african-bush-elephant-africa-59989.jpg" alt="Girl in a jacket" width="500" height="600">
+  <div class="nameofexpodition">
+    <p>soething</p>
+  </div>
+  <div class="typeofexpodition-content">
+    <p>Chronoshift Expeditions first started when Dr. Juan Perez had a  desire to hunt extinct monsters. He attended college and earned  his engineering and theoretical physics PhD’s. Eventually, he developed a time machine to travel back in time to hunt the monsters that once ruled the planet. The time machine took roughly 12 years to develop, though the building of the machine didn’t take long. The part that took the longest was doing the math to figure out how to travel in time.</p>
+  </div> 
+</div>
+
+
+
+
+</html>
